@@ -13,8 +13,9 @@ public class RotationMethodJacobi {
     public static final double EPS = 0.1;
 
     public static void main(String[] args) {
-        double summ;
-        Matrix A = matrix;
+        if (matrix.equals(matrix.transpose())) {
+            double summ;
+            Matrix A = matrix;
             do {
                 Matrix matrixU = new Basic2DMatrix(new double[][]{
                         {1, 0, 0, 0},
@@ -28,8 +29,8 @@ public class RotationMethodJacobi {
                 //find the biggest and index of I and J
                 for (int i = 0; i < A.columns(); i++) {
                     for (int j = 0; j < A.columns(); j++) {
-                        if(i!=j){
-                            if(biggest < Math.abs(A.get(i,j))){
+                        if (i != j) {
+                            if (biggest < Math.abs(A.get(i, j))) {
                                 biggest = Math.round(Math.abs(A.get(i, j)) * 100.0) / 100.0;
                                 indexOfI = i;
                                 indexOfJ = j;
@@ -48,18 +49,19 @@ public class RotationMethodJacobi {
                 Matrix AK = matrixU.transpose().multiply(A).multiply(matrixU);
                 for (int i = 0; i < AK.columns(); i++) {
                     for (int j = 0; j < AK.columns(); j++) {
-                        if(i!=j){
-                            summ+= Math.pow(AK.get(i, j), 2);
+                        if (i != j) {
+                            summ += Math.pow(AK.get(i, j), 2);
                         }
                     }
                 }
                 A = AK;
-        } while (summ > EPS);
-        for (int i = 0; i < A.columns(); i++) {
-            for (int j = 0; j < A.columns(); j++) {
-                System.out.print(Math.round(A.get(i, j) * 100.0) / 100.0 + " ");
+            } while (summ > EPS);
+            for (int i = 0; i < A.columns(); i++) {
+                for (int j = 0; j < A.columns(); j++) {
+                    System.out.print(Math.round(A.get(i, j) * 100.0) / 100.0 + " ");
+                }
+                System.out.println("\n");
             }
-            System.out.println("\n");
         }
     }
 }
