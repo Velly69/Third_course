@@ -1,20 +1,20 @@
 package org.lab.first;
 
 import spos.lab1.demo.DoubleOps;
+import java.util.OptionalDouble;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class RunningThread extends Thread{
-    String functionName;
-    int delayF;
-    int delayG;
-    Result result;
-    int testCase;
-    public boolean needPause;
+    private static final Logger log = Logger.getLogger(RunningThread.class.getName());
+    private final String functionName;
+    public OptionalDouble result;
+    private final int testCase;
+    public boolean calculated = false;
+    public boolean notUsed = true;
 
-    public RunningThread(String functionName, int delayF, int delayG, Result result, int testCase) {
+    public RunningThread(String functionName, int testCase) {
         this.functionName = functionName;
-        this.delayF = delayF;
-        this.delayG = delayG;
-        this.result = result;
         this.testCase = testCase;
     }
 
@@ -22,62 +22,23 @@ public class RunningThread extends Thread{
     public void run() {
         try{
             if(functionName.equals("F")){
-                result.resultF = DoubleOps.funcF(testCase);
+                result = OptionalDouble.of(DoubleOps.funcF(testCase));
                 synchronized (this){
-                    while (needPause){
-                        wait();
+                    if(result.isPresent()){
+                        calculated = true;
                     }
-                    if(result.resultF == 0){
-                        System.out.println("Result is 0, because the function F is 0");
-                        System.exit(0);
-                    }
-                    System.out.println("The result of function F is " + result.resultF);
                 }
-                Thread.sleep(delayF);
             }
             else if(functionName.equals("G")){
-                result.resultG = DoubleOps.funcG(testCase);
+                result = OptionalDouble.of(DoubleOps.funcG(testCase));
                 synchronized (this){
-                    while (needPause){
-                        wait();
+                    if(result.isPresent()){
+                        calculated = true;
                     }
-                    if(result.resultG == 0){
-                        System.out.println("Result is 0, because the function G is 0");
-                        System.exit(0);
-                    }
-                    System.out.println("The result of function G is " + result.resultG);
-                }
-                Thread.sleep(delayG);
-            } else {
-                synchronized(this) {
-                    while(needPause) {
-                        wait();
-                    }
-                    System.out.println("Unknown function...");
-                }
-                return;
-            }
-
-            Thread.sleep(2000);
-            synchronized (this){
-                while (needPause){
-                    wait();
-                }
-                if(result.result == 0){
-                    result.calculateResult();
                 }
             }
         } catch (InterruptedException ex){
-            ex.printStackTrace();
+            log.log(Level.SEVERE, "Exception: ", ex);
         }
-    }
-
-    public void suspendThread(){
-        needPause = true;
-    }
-
-    public synchronized void resumeThread(){
-        needPause = false;
-        this.notify();
     }
 }
