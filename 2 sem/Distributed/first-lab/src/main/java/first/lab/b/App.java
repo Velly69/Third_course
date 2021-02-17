@@ -1,6 +1,7 @@
 package first.lab.b;
 
-import first.lab.CustomRunnable;
+import first.lab.MyRunnable;
+
 import javax.swing.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -8,7 +9,7 @@ public class App {
     private static Thread firstThread;
     private static Thread secondThread;
     private static final JSlider slider = new JSlider();
-    private static AtomicInteger semaphore = new AtomicInteger(0);
+    public static AtomicInteger semaphore = new AtomicInteger(0);
     private static JButton start1ThreadButton = new JButton("Start 1 Thread");
     private static JButton start2ThreadButton = new JButton("Start 2 Thread");
     private static JButton stop1ThreadButton = new JButton("Stop 1 Thread");
@@ -56,35 +57,35 @@ public class App {
     }
 
     private static void clickedStart1Thread() {
-        if(semaphore.compareAndSet(0, 1)) {
-            firstThread = new Thread(new CustomRunnable(10, slider));
-            firstThread.setDaemon(true);
-            firstThread.start();
-            firstThread.setPriority(1);
-
-            stop2ThreadButton.setEnabled(false);
-            infoLabel.setVisible(false);
-        } else {
+        if(semaphore.get() == 1) {
             infoLabel.setVisible(true);
+            return;
         }
+        firstThread = new Thread(new MyRunnable(10, slider));
+        firstThread.setDaemon(true);
+        firstThread.start();
+        firstThread.setPriority(1);
+
+        stop2ThreadButton.setEnabled(false);
+        infoLabel.setVisible(false);
     }
 
     private static void clickedStart2Thread() {
-        if(semaphore.compareAndSet(0, 1)) {
-            secondThread = new Thread(new CustomRunnable(90, slider));
-            secondThread.setDaemon(true);
-            secondThread.start();
-            secondThread.setPriority(10);
-
-            stop1ThreadButton.setEnabled(false);
-            infoLabel.setVisible(false);
-        } else {
+        if(semaphore.get() == 1) {
             infoLabel.setVisible(true);
+            return;
         }
+        secondThread = new Thread(new MyRunnable(90, slider));
+        secondThread.setDaemon(true);
+        secondThread.start();
+        secondThread.setPriority(10);
+
+        stop1ThreadButton.setEnabled(false);
+        infoLabel.setVisible(false);
     }
 
     private static void clickedStop1Thread() {
-        if (semaphore.compareAndSet(1, 0)) {
+        if (semaphore.get() == 1) {
             firstThread.interrupt();
             stop2ThreadButton.setEnabled(true);
             infoLabel.setVisible(false);
@@ -92,10 +93,11 @@ public class App {
     }
 
     private static void clickedStop2Thread() {
-        if (semaphore.compareAndSet(1, 0)) {
+        if (semaphore.get() == 1) {
             secondThread.interrupt();
             stop1ThreadButton.setEnabled(true);
             infoLabel.setVisible(false);
         }
     }
 }
+
