@@ -1,6 +1,7 @@
 package first.lab.a;
 
 import first.lab.CustomRunnable;
+
 import javax.swing.*;
 
 public class App {
