@@ -12,22 +12,6 @@ public class Monk implements Comparable {
         monastery = (r.nextInt(2) == 0) ? "Huan-un" : "Huan-in";
     }
 
-    public Integer getEnergy() {
-        return energy;
-    }
-
-    public String getMonastery() {
-        return monastery;
-    }
-
-    public void setEnergy(Integer energy) {
-        this.energy = energy;
-    }
-
-    public void setMonastery(String monastery) {
-        this.monastery = monastery;
-    }
-
     @Override
     public String toString() {
         return "Monk from " + monastery +" with energy: "+energy;
@@ -42,10 +26,6 @@ public class Monk implements Comparable {
         } else {
             return 0;
         }
-    }
-
-    public static Monk max(Object first, Object second) {
-        return Monk.max((Monk)first, (Monk)second);
     }
 
     static Monk max(Monk first, Monk second){

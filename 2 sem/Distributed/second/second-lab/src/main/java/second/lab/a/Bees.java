@@ -1,6 +1,6 @@
 package second.lab.a;
 
-public class Bees implements Runnable{
+public class Bees implements Runnable {
     private static Manager manager;
     private static int winniX;
     private static int winniY;
