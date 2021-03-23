@@ -45,7 +45,7 @@ func (smoker Smoker) tryToSmoke(partsChan chan Ingredient, smokerSemaphore chan 
 		if firstIngredient != smoker.ingredient && secondIngredient != smoker.ingredient {
 			fmt.Println("Smoker "+smoker.name+" got ingredients:",
 				firstIngredient, ", ", secondIngredient)
-			fmt.Println("Smoker "+smoker.name+" add ingredient:",
+			fmt.Println("Smoker "+smoker.name+" added ingredient:",
 				smoker.ingredient)
 			time.Sleep(100 * time.Millisecond)
 			fmt.Println("Smoker " + smoker.name + " smoked a cigarette")
@@ -71,7 +71,7 @@ func (Mediator) giveItems(partsChan chan Ingredient, smokerSemaphore chan int,
 		for secondIngredient == firstIngredient {
 			secondIngredient = random.Intn(3)
 		}
-		fmt.Println("Mediator sends", Ingredient(firstIngredient), "and",
+		fmt.Println("Mediator sent", Ingredient(firstIngredient), "and",
 												Ingredient(secondIngredient))
 		partsChan <- Ingredient(firstIngredient)
 		partsChan <- Ingredient(secondIngredient)
