@@ -36,12 +36,12 @@ public class Manager {
         Thread simulate = new Thread(simulation);
         SimulationThread[] threads = new SimulationThread[THREAD_NUM];
 
-        int generated = 0;
+        int edge = 0;
         for (int i = 0; i < THREAD_NUM - 1; ++i) {
-            threads[i] = new SimulationThread(barrier, simulation, generated, TASK_SIZE);
-            generated += TASK_SIZE;
+            threads[i] = new SimulationThread(barrier, simulation, edge, TASK_SIZE);
+            edge += TASK_SIZE;
         }
-        threads[THREAD_NUM - 1] = new SimulationThread(barrier, simulation, generated, ROWS - generated);
+        threads[THREAD_NUM - 1] = new SimulationThread(barrier, simulation, edge, ROWS - edge);
         simulate.start();
         draw.start();
         for (int i = 0; i < THREAD_NUM; ++i) {
