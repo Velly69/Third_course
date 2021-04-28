@@ -1,0 +1,24 @@
+
+c
+java:S2142/"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8±‚®âˆ/
+o
+java:S3457€"Q%n should be used in place of \n to produce the platform-specific line separator.(Úã«8‘±âˆ/
+c
+java:S2142["FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8‘Ü¯âˆ/
+s
+java:S34575"Q%n should be used in place of \n to produce the platform-specific line separator.(¤¿òòúÿÿÿÿ8±‚®âˆ/
+c
+java:S2142x"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8‘±âˆ/
+d
+java:S2142‘"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Ô¯²âˆ/
+[	java:S106š"9Replace this use of System.out or System.err by a logger.(¿“ìêùÿÿÿÿ8Ô¯²âˆ/
+a
+java:S2259c"EA "NullPointerException" could be thrown; "request" is nullable here.(Â¯8‘Ü¯âˆ/
+c
+java:S2142""FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8±‚®âˆ/
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(Úã«8‘±âˆ/
+n
+java:S3457'"Q%n should be used in place of \n to produce the platform-specific line separator.(Âí¯¯8¿Éâˆ/
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(¤¿òòúÿÿÿÿ8±‚®âˆ/
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(Âí¯¯8±‚®âˆ/
+[	java:S106—"9Replace this use of System.out or System.err by a logger.(–®Íãÿÿÿÿÿ8Ô¯²âˆ/

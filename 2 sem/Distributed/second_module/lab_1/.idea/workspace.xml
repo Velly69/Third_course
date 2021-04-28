@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="646b933f-f591-48fb-93f0-59357e193450" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../1 sem/SPOS/Lab-1/src/main/java/org/lab/first/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../1 sem/SPOS/Lab-1/src/main/java/org/lab/first/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/findian.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/makejson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/read/names.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/read/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/trunc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/animal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/animals.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/bubblesort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/formula.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/dinner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/race.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/sort.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/fifth-lab-c.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/CustomCyclicBarrier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/RecruitsPartRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/Changer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/Checker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/CustomRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/MyRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/a/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/b/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/forth-lab-b.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/gardenStatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/database.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/ReadWriteLock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/Reader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/Writer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/instructions/ReaderInstruction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/instructions/WriterInstruction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/BusScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Creator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Instructions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Stop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab-b/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab-b/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/Bees.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/Monk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/Tournament.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Bullet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/GameObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/GamePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Hunter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckDead.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckLeft.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckRight.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/hunter.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Buffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Drawing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Simulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/SimulationThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Buffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Drawing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Simulation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third-lab-c/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third-lab-c/c.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/Barber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/Visitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Bear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Bee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Pot.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rng96yBOVt09d66byv4yO72vuv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="646b933f-f591-48fb-93f0-59357e193450" name="Default Changelist" comment="" />
+      <created>1619617115178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619617115178</updated>
+      <workItem from="1619617117694" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

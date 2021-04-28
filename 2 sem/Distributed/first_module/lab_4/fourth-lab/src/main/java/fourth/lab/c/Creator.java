@@ -2,7 +2,7 @@ package fourth.lab.c;
 
 import java.util.concurrent.locks.ReadWriteLock;
 
-public class Creator implements Runnable{
+public class Creator implements Runnable {
     private ReadWriteLock lock;
     private BusScheduler scheduler;
     private Instructions instruction;
