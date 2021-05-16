@@ -23,112 +23,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="646b933f-f591-48fb-93f0-59357e193450" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../1 sem/SPOS/Lab-1/src/main/java/org/lab/first/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../1 sem/SPOS/Lab-1/src/main/java/org/lab/first/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/findian.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/makejson.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/read/names.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/read/read.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/slice.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/First Part/trunc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/animal.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/animals.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/bubblesort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Second Part/formula.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/dinner.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/race.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Go Courses/Third Part/sort.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/fifth-lab-c.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab-c/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/CustomCyclicBarrier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/a/RecruitsPartRunnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/Changer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fifth/fifth-lab/src/main/java/fifth/lab/b/Checker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/CustomRunnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/MyRunnable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/a/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../first-lab/src/main/java/first/lab/b/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/forth-lab-b.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/gardenStatus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab-b/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/database.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/ReadWriteLock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/Writer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/instructions/ReaderInstruction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/a/instructions/WriterInstruction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/BusScheduler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Creator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Instructions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fourth/fourth-lab/src/main/java/fourth/lab/c/Stop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab-b/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab-b/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/Bees.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/a/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/Monk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../second/second-lab/src/main/java/second/lab/c/Tournament.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Bullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Duck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/GamePanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/java/seventh/lab/Hunter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckDead.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckLeft.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/duckRight.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../seventh-lab/src/main/resources/hunter.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Buffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Drawing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/Simulation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/a/SimulationThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Buffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Drawing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../sixth-lab/src/main/java/sixth/lab/b/Simulation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third-lab-c/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third-lab-c/c.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/Barber.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/b/Visitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Bear.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Bee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../third-lab/third/src/main/java/third/lab/а/Pot.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/DOMParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/models/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/models/VideoShop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/shop.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/second/module/first/shop.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/second_module_text.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/connection/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/dao/ActorsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/dao/MovieDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/models/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/models/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/second/task/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/second/task/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/third/task/RMIServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../second_module_text/src/main/java/second/module/test/third/task/RMIServerImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../OOP/first_lab/first_lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../OOP/trying-lab-example/trying-lab-example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../OOP/trying-lab-example/ui/ui.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
@@ -141,17 +74,79 @@
     </option>
   </component>
   <component name="ProjectId" id="1rng96yBOVt09d66byv4yO72vuv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/second/module/first" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="second.module.first.Application" />
+      <module name="lab_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="second.module.first.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="second.module.first.UserInterface" />
+      <module name="lab_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="second.module.first.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.UserInterface" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="646b933f-f591-48fb-93f0-59357e193450" name="Default Changelist" comment="" />
@@ -159,9 +154,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619617115178</updated>
-      <workItem from="1619617117694" duration="3000" />
+      <workItem from="1619617117694" duration="6469000" />
+      <workItem from="1621169682042" duration="7352000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -173,5 +172,81 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="31" key="#Project_Structure" timestamp="1619618217235">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="#Project_Structure/0.0.1440.900@0.0.1440.900" timestamp="1619618217235" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1619623356677">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1619623356677" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1621176702349">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1621176702349" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.810@0.23.1440.810" timestamp="1621176532735" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1621176702348">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1621176702348" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.810@0.23.1440.810" timestamp="1621176532734" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1621176702347">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1621176702347" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.810@0.23.1440.810" timestamp="1621176532733" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1621176702349">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1621176702349" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.810@0.23.1440.810" timestamp="1621176532735" />
+    <state width="1398" height="2" key="GridCell.Tab.1.bottom" timestamp="1621175495561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1621175495561" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1621175385378" />
+    <state width="1398" height="2" key="GridCell.Tab.1.center" timestamp="1621175495561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1621175495561" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1621175385377" />
+    <state width="1398" height="2" key="GridCell.Tab.1.left" timestamp="1621175495560">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1621175495560" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1621175385377" />
+    <state width="1398" height="2" key="GridCell.Tab.1.right" timestamp="1621175495561">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1621175495561" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1621175385378" />
+    <state x="88" y="113" key="new project wizard" timestamp="1619687499507">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="88" y="113" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1619687499507" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/second/module/first/Application.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/second/module/first/Application.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/second/module/first/Application.java</url>
+          <line>335</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

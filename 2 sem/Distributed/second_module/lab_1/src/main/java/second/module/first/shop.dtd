@@ -1,0 +1,13 @@
+<!ELEMENT Shop (Genre*)>
+        <!ELEMENT Genre (Movie*)>
+        <!ELEMENT Movie (#PCDATA)>
+        <!ATTLIST Genre
+                id ID #REQUIRED
+                name CDATA #REQUIRED
+                >
+        <!ATTLIST Movie
+                id ID #REQUIRED
+                genreId IDREF #REQUIRED
+                name CDATA #REQUIRED
+                releaseYear CDATA #REQUIRED
+                >

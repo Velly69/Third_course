@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE Shop SYSTEM "shop.dtd">
+<Shop>
+    <Genre id="genre1" name="Comedy">
+        <Movie genreId="genre1" id="id1" name="Baron" releaseYear="2000"/>
+    </Genre>
+    <Genre id="genre0" name="Horror">
+    <Movie genreId="genre0" id="id0" name="Scream" releaseYear="1987"/>
+</Genre>
+</Shop>
