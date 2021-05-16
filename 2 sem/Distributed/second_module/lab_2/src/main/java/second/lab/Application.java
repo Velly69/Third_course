@@ -1,17 +1,13 @@
 package second.lab;
 
-import org.xml.sax.SAXException;
 import second.lab.connection.CustomConnection;
 import second.lab.dao.GenreDAO;
 import second.lab.dao.MovieDAO;
 import second.lab.dto.GenreDTO;
 import second.lab.dto.MovieDTO;
-
 import javax.swing.*;
-import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.IOException;
 import java.util.List;
 
 public class Application extends JFrame {
@@ -33,8 +29,8 @@ public class Application extends JFrame {
     private static Box menuPanel = Box.createVerticalBox();
     private static Box actionPanel = Box.createVerticalBox();
     private static Box comboPanel = Box.createVerticalBox();
-    private static Box cityPanel = Box.createVerticalBox();
-    private static Box countryPanel = Box.createVerticalBox();
+    private static Box moviePanel = Box.createVerticalBox();
+    private static Box genrePanel = Box.createVerticalBox();
 
     private static JComboBox comboGenre = new JComboBox();
     private static JComboBox comboMovie = new JComboBox();
@@ -70,8 +66,8 @@ public class Application extends JFrame {
                 genreMode = true;
                 menuPanel.setVisible(false);
                 comboPanel.setVisible(false);
-                countryPanel.setVisible(true);
-                cityPanel.setVisible(false);
+                genrePanel.setVisible(true);
+                moviePanel.setVisible(false);
                 actionPanel.setVisible(true);
                 pack();
             }
@@ -84,8 +80,8 @@ public class Application extends JFrame {
                 genreMode = false;
                 menuPanel.setVisible(false);
                 comboPanel.setVisible(false);
-                countryPanel.setVisible(false);
-                cityPanel.setVisible(true);
+                genrePanel.setVisible(false);
+                moviePanel.setVisible(true);
                 actionPanel.setVisible(true);
                 pack();
             }
@@ -97,8 +93,8 @@ public class Application extends JFrame {
                 editMode = true;
                 menuPanel.setVisible(false);
                 comboPanel.setVisible(true);
-                countryPanel.setVisible(false);
-                cityPanel.setVisible(false);
+                genrePanel.setVisible(false);
+                moviePanel.setVisible(false);
                 actionPanel.setVisible(true);
                 pack();
             }
@@ -112,8 +108,8 @@ public class Application extends JFrame {
             String name = (String) comboGenre.getSelectedItem();
             currentGenre = GenreDAO.findByName(name);
             genreMode = true;
-            countryPanel.setVisible(true);
-            cityPanel.setVisible(false);
+            genrePanel.setVisible(true);
+            moviePanel.setVisible(false);
             fillGenreFields();
             pack();
         });
@@ -124,33 +120,30 @@ public class Application extends JFrame {
             String name = (String) comboMovie.getSelectedItem();
             currentMovie = MovieDAO.findByName(name);
             genreMode = false;
-            countryPanel.setVisible(false);
-            cityPanel.setVisible(true);
+            genrePanel.setVisible(false);
+            moviePanel.setVisible(true);
             fillMovieFields();
             pack();
         });
         fillComboBoxes();
         comboPanel.setVisible(false);
 
-        // City Fields
-        cityPanel.add(new JLabel("Name:"));
-        cityPanel.add(textMovieName);
-        cityPanel.add(Box.createVerticalStrut(20));
-        cityPanel.add(new JLabel("Genre Name:"));
-        cityPanel.add(textMovieGenreName);
-        cityPanel.add(Box.createVerticalStrut(20));
-        cityPanel.add(new JLabel("Release year:"));
-        cityPanel.add(textMovieYear);
-        cityPanel.add(Box.createVerticalStrut(20));
-        cityPanel.setVisible(false);
+        moviePanel.add(new JLabel("Name:"));
+        moviePanel.add(textMovieName);
+        moviePanel.add(Box.createVerticalStrut(20));
+        moviePanel.add(new JLabel("Genre Name:"));
+        moviePanel.add(textMovieGenreName);
+        moviePanel.add(Box.createVerticalStrut(20));
+        moviePanel.add(new JLabel("Release year:"));
+        moviePanel.add(textMovieYear);
+        moviePanel.add(Box.createVerticalStrut(20));
+        moviePanel.setVisible(false);
 
-        // Country Fields
-        countryPanel.add(new JLabel("Name:"));
-        countryPanel.add(textGenreName);
-        countryPanel.add(Box.createVerticalStrut(20));
-        countryPanel.setVisible(false);
+        genrePanel.add(new JLabel("Name:"));
+        genrePanel.add(textGenreName);
+        genrePanel.add(Box.createVerticalStrut(20));
+        genrePanel.setVisible(false);
 
-        // Action Bar
         actionPanel.add(btnSave);
         actionPanel.add(Box.createVerticalStrut(20));
         btnSave.addMouseListener(new MouseAdapter() {
@@ -172,8 +165,8 @@ public class Application extends JFrame {
                 clearFields();
                 menuPanel.setVisible(true);
                 comboPanel.setVisible(false);
-                countryPanel.setVisible(false);
-                cityPanel.setVisible(false);
+                genrePanel.setVisible(false);
+                moviePanel.setVisible(false);
                 actionPanel.setVisible(false);
                 pack();
             }
@@ -184,11 +177,11 @@ public class Application extends JFrame {
         box.setPreferredSize(new Dimension(300, 500));
         box.add(menuPanel);
         box.add(comboPanel);
-        box.add(countryPanel);
-        box.add(cityPanel);
+        box.add(genrePanel);
+        box.add(moviePanel);
         box.add(actionPanel);
         setContentPane(box);
-        //pack();
+        pack();
     }
 
     private static void sizeAllElements() {
@@ -211,8 +204,8 @@ public class Application extends JFrame {
         menuPanel.setMaximumSize(panelDimension);
         comboPanel.setPreferredSize(panelDimension);
         actionPanel.setPreferredSize(panelDimension);
-        cityPanel.setPreferredSize(panelDimension);
-        countryPanel.setPreferredSize(panelDimension);
+        moviePanel.setPreferredSize(panelDimension);
+        genrePanel.setPreferredSize(panelDimension);
 
         comboGenre.setPreferredSize(dimension);
         comboMovie.setPreferredSize(dimension);
@@ -249,12 +242,10 @@ public class Application extends JFrame {
             if (genreMode) {
                 GenreDTO genre = new GenreDTO();
                 genre.setName(textGenreName.getText());
-
                 if (!GenreDAO.insert(genre)) {
                     JOptionPane.showMessageDialog(null, "Error: insertion failed!");
                     return;
                 }
-
                 comboGenre.addItem(genre.getName());
             } else {
                 MovieDTO movie = new MovieDTO();
@@ -263,7 +254,7 @@ public class Application extends JFrame {
 
                 GenreDTO genre = GenreDAO.findByName(textMovieGenreName.getText());
                 if (genre == null) {
-                    JOptionPane.showMessageDialog(null, "Error: no such country!");
+                    JOptionPane.showMessageDialog(null, "Error: no such genre!");
                     return;
                 }
                 movie.setGenreId(genre.getId());
@@ -272,7 +263,6 @@ public class Application extends JFrame {
                     JOptionPane.showMessageDialog(null, "Error: insertion failed!");
                     return;
                 }
-
                 comboMovie.addItem(movie.getName());
             }
         }
@@ -282,6 +272,7 @@ public class Application extends JFrame {
         if (editMode) {
             if (genreMode) {
                 List<MovieDTO> list = MovieDAO.findByGenreId(currentGenre.getId());
+                assert list != null;
                 for (MovieDTO m : list) {
                     comboMovie.removeItem(m.getName());
                     MovieDAO.delete(m);
@@ -300,9 +291,11 @@ public class Application extends JFrame {
         comboMovie.removeAllItems();
         List<GenreDTO> genres = GenreDAO.findAll();
         List<MovieDTO> movies = MovieDAO.findAll();
+        assert genres != null;
         for (GenreDTO genre : genres) {
             comboGenre.addItem(genre.getName());
         }
+        assert movies != null;
         for (MovieDTO movie : movies) {
             comboMovie.addItem(movie.getName());
         }
@@ -333,7 +326,7 @@ public class Application extends JFrame {
         textMovieYear.setText(String.valueOf(currentMovie.getReleaseYear()));
     }
 
-    public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
+    public static void main(String[] args) {
         JFrame myWindow = new Application();
         myWindow.setVisible(true);
     }
