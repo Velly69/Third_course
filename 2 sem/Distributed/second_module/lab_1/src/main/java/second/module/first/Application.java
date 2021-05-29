@@ -345,7 +345,5 @@ public class Application extends JFrame {
         shop = DOMParser.parse("src/main/java/second/module/first/shop.xml");
         JFrame myWindow = new Application();
         myWindow.setVisible(true);
-        Movie movie = shop.getMovie("Halo");
-        System.out.println(movie.getName() + ": " + movie.getMovieId());
     }
 }

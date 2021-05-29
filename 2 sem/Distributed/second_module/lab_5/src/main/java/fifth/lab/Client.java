@@ -5,7 +5,6 @@ import fifth.lab.dto.MovieDTO;
 import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
