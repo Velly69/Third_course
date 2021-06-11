@@ -31,29 +31,6 @@ public class ActorsDAO {
         return null;
     }
 
-    public static Actor findByName(String name) {
-        try (Connection connection = DBConnection.getConnection()) {
-            String sql = "SELECT * FROM actor WHERE name = ?";
-            PreparedStatement st = connection.prepareStatement(sql);
-            st.setString(1, name);
-            ResultSet rs = st.executeQuery();
-            Actor actor = null;
-            if (rs.next()) {
-                actor = new Actor();
-                actor.setId(rs.getLong(1));
-                actor.setName(rs.getString(2));
-                actor.setSurname(rs.getString(3));
-                actor.setBirthDate(rs.getDate(4));
-                actor.setMovieId(rs.getLong(5));
-            }
-            st.close();
-            return actor;
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        return null;
-    }
-
     public static boolean updateActorByName(Actor actor) {
         try (Connection connection = DBConnection.getConnection()) {
             String sql = "UPDATE actor SET name = ? WHERE id = ?";
@@ -95,12 +72,12 @@ public class ActorsDAO {
         return false;
     }
 
-    public static boolean delete(Actor actor) {
+    public static boolean delete(long id) {
         try(Connection connection = DBConnection.getConnection();) {
             String sql =
                     "DELETE FROM actor WHERE id = ?";
             PreparedStatement st = connection.prepareStatement(sql);
-            st.setLong(1, actor.getId());
+            st.setLong(1, id);
             int result = st.executeUpdate();
             st.close();
             if(result>0)

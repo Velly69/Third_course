@@ -32,28 +32,6 @@ public class MovieDAO {
         return null;
     }
 
-    public static Movie findByName(String name) {
-        try (Connection connection = DBConnection.getConnection()) {
-            String sql = "SELECT * FROM movie WHERE name = ?";
-            PreparedStatement st = connection.prepareStatement(sql);
-            st.setString(1, name);
-            ResultSet rs = st.executeQuery();
-            Movie movie = null;
-            if (rs.next()) {
-                movie = new Movie();
-                movie.setId(rs.getLong(1));
-                movie.setName(rs.getString(2));
-                movie.setCountry(rs.getString(3));
-                movie.setReleaseYear(rs.getInt(4));
-            }
-            st.close();
-            return movie;
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
-        return null;
-    }
-
     public static boolean updateMovieByName(Movie movie) {
         try (Connection connection = DBConnection.getConnection()) {
             String sql = "UPDATE movie SET name = ? WHERE id = ?";
@@ -95,12 +73,12 @@ public class MovieDAO {
         return false;
     }
 
-    public static boolean delete(Movie movie) {
+    public static boolean delete(long id) {
         try(Connection connection = DBConnection.getConnection();) {
             String sql =
                     "DELETE FROM movie WHERE id = ?";
             PreparedStatement st = connection.prepareStatement(sql);
-            st.setLong(1, movie.getId());
+            st.setLong(1,id);
             int result = st.executeUpdate();
             st.close();
             if(result>0)
