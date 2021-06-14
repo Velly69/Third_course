@@ -141,47 +141,6 @@ public class UI {
                     System.out.println("Deleted movie!");
                     break;
 
-
-//                case 9:
-//                    System.out.println("Enter orderid, productid, quantity:");
-//                    var cont = new Containing();
-//                    id = in.nextLong();
-//                    cont.setOrderid(id);
-//                    id = in.nextLong();
-//                    cont.setProductid(id);
-//                    id = in.nextLong();
-//                    cont.setQuantity(id);
-//                    requests.createContaining(cont);
-//                    System.out.println("Adding product to order...");
-//                    break;
-//                case 10:
-//                    System.out.println("Enter orderid, productid:");
-//                    id = in.nextLong();
-//                    var aux2 = in.nextLong();
-//                    cont = requests.readContaining(id,aux2);
-//                    System.out.println(cont);
-//                    break;
-//                case 11:
-//                    System.out.println("Enter orderid, productid, quantity:");
-//                    cont = new Containing();
-//                    id = in.nextLong();
-//                    cont.setOrderid(id);
-//                    id = in.nextLong();
-//                    cont.setProductid(id);
-//                    id = in.nextLong();
-//                    cont.setQuantity(id);
-//                    requests.updateContaining(cont);
-//                    System.out.println("Updating order details...");
-//                    break;
-//                case 12:
-//                    System.out.println("Enter orderid, productid:");
-//                    id = in.nextLong();
-//                    aux2 = in.nextLong();
-//                    requests.deleteContaining(id,aux2);
-//                    System.out.println("Deleting...");
-//                    break;
-
-
                 case 13:
                     List<Actor> list1 = requests.findAllActors();
                     System.out.println(list1);
