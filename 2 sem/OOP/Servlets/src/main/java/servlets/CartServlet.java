@@ -1,7 +1,7 @@
 package servlets;
 
 import com.google.gson.Gson;
-import data.ShoppingCartItem;
+import entity.CartItem;
 import service.CartService;
 
 import javax.servlet.annotation.WebServlet;
@@ -20,8 +20,8 @@ public class CartServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("Received get request");
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         Gson gson = new Gson();
         int userId = getCurrentUserId(request);
@@ -44,7 +44,7 @@ public class CartServlet extends HttpServlet {
                     int productId = Integer.parseInt(request.getParameter("product_id"));
                     int quantity = Integer.parseInt(request.getParameter("quantity"));
                     log.info("Received add product to the cart");
-                    CartService.addProductToCart(new ShoppingCartItem(userId, productId, quantity));
+                    CartService.addProductToCart(new CartItem(userId, productId, quantity));
                     break;
                 }
                 case "remove-from-cart": {

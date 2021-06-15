@@ -1,7 +1,7 @@
-import data.Administrator;
-import data.Client;
-import data.UserType;
-import connection.DatabaseConnection;
+import entity.Admin;
+import entity.Client;
+import entity.UserType;
+import connection.ConnectionPool;
 import org.junit.Test;
 
 import java.sql.Connection;
@@ -12,7 +12,7 @@ import static junit.framework.TestCase.*;
 public class AppTest {
     @Test
     public void testAdministratorHasType() {
-        Administrator administrator = new Administrator(1, "test", "password");
+        Admin administrator = new Admin(1, "test", "password");
         assertNotNull(administrator.getType());
         assertEquals(administrator.getType(), UserType.ADMINISTRATOR);
     }
@@ -26,7 +26,7 @@ public class AppTest {
 
     @Test
     public void testDefaultAdministratorIsNotBlocked() {
-        Administrator administrator = new Administrator(1, "test", "password");
+        Admin administrator = new Admin(1, "test", "password");
         assertFalse(administrator.isBlocked());
     }
 
@@ -38,7 +38,7 @@ public class AppTest {
 
     @Test
     public void testPostgresqlConnectionExists() throws SQLException, InterruptedException {
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         Connection connection = cp.getConnection();
         assertNotNull(connection);
     }

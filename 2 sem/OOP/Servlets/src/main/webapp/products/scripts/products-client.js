@@ -52,8 +52,8 @@ const populateTable = async () => {
             quantity.appendChild(createOption(3, "Quantity: 3", false));
 
             let addToCart = document.createElement("button");
-            addToCart.innerText = "add to cart"
-            addToCart.className = "badge badge-dark";
+            addToCart.innerText = "Add to cart"
+            addToCart.className = "btn btn-success";
             addToCart.style.marginRight = "10px";
             addToCart.onclick = async function () {
                 await fetch(`/servlets/cart/add-to-cart?product_id=${id}&quantity=${quantity.value}`);

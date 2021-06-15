@@ -60,20 +60,6 @@ public class ServletTests {
     /* LoginServletTests*/
 
     @Test
-    public void testGetNullRequestLogin() {
-        Throwable exception =
-                assertThrows(IllegalArgumentException.class, () -> loginServlet.doPost(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
-    }
-
-    @Test
-    public void testGetNullResponseLogin() {
-        Throwable exception =
-                assertThrows(IllegalArgumentException.class, () -> loginServlet.doPost(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
-    }
-
-    @Test
     public void testLoginIncorrectDetails() throws IOException {
         setRequestParametersForLogin("name", "password");
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
@@ -89,14 +75,14 @@ public class ServletTests {
     public void testGetNullRequestCart() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> cartServlet.doGet(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
     public void testGetNullResponseCart() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> cartServlet.doGet(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     /* LogoutServletTests*/
@@ -105,14 +91,14 @@ public class ServletTests {
     public void testGetNullRequestLogout() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> logoutServlet.doPost(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
     public void testGetNullResponseLogout() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> logoutServlet.doPost(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     /* ProductsServletTests*/
@@ -131,14 +117,14 @@ public class ServletTests {
     public void testGetNullRequestProducts() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> productsServlet.doPost(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
     public void testGetNullResponseProducts() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> productsServlet.doPost(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     /* RegistrationServletTests*/
@@ -148,7 +134,7 @@ public class ServletTests {
         Throwable exception =
                 assertThrows(
                         IllegalArgumentException.class, () -> registrationServlet.doPost(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
@@ -156,7 +142,7 @@ public class ServletTests {
         Throwable exception =
                 assertThrows(
                         IllegalArgumentException.class, () -> registrationServlet.doPost(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
@@ -172,13 +158,13 @@ public class ServletTests {
     public void testGetNullRequestUsers() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> usersServlet.doGet(null, response));
-        assertEquals("Request must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 
     @Test
     public void testGetNullResponseUsers() {
         Throwable exception =
                 assertThrows(IllegalArgumentException.class, () -> usersServlet.doGet(request, null));
-        assertEquals("Response must not be null.", exception.getMessage());
+        assertEquals("Response/request must not be null.", exception.getMessage());
     }
 }

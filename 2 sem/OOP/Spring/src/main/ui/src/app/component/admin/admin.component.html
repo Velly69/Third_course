@@ -2,9 +2,9 @@
 
   <h2>Users:</h2>
   <div *ngFor="let user of users">
-    <p><span class="user-item">Username:</span> {{user.username}}</p>
-    <p><span class="user-item">Balance:</span> {{user.balance}}$</p>
-    <hr>
+    <div class="middle-user">
+      <p><span class="user-item">Username:</span> {{user.username}} <span class="user-item">Balance:</span> {{user.balance}}$</p>
+    </div>
   </div>
 </div>
 

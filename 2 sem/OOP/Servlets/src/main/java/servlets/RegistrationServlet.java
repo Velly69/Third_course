@@ -1,7 +1,7 @@
 package servlets;
 
-import data.User;
-import data.UserType;
+import entity.User;
+import entity.UserType;
 import service.UserService;
 
 import javax.servlet.RequestDispatcher;
@@ -25,8 +25,8 @@ public class RegistrationServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         log.info("Received data from the registration.");
         Map<String, String[]> parameterMap = request.getParameterMap();
@@ -40,8 +40,8 @@ public class RegistrationServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         ServletContext servletContext = getServletContext();
         RequestDispatcher requestDispatcher = servletContext.getRequestDispatcher("/registration");

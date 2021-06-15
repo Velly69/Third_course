@@ -40,14 +40,14 @@ const populateTable = async () => {
             const actions = document.createElement('td');
             let editButton = document.createElement("button");
             editButton.innerText = "edit";
-            editButton.className = "badge badge-dark";
+            editButton.className = "btn btn-primary";
             editButton.style.marginRight = "10px";
             editButton.onclick = function () {
                 window.location = `http://localhost:8080/products/product-manager.jsp?id=${request.productId}`;
             }
             let removeButton = document.createElement("button");
             removeButton.innerText = "remove";
-            removeButton.className = "badge badge-dark";
+            removeButton.className = "btn btn-danger";
             removeButton.onclick = async function () {
                 await fetch(`/servlets/products/remove?id=${request.productId}`);
                 window.location.reload();

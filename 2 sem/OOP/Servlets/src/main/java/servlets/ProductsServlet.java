@@ -1,8 +1,8 @@
 package servlets;
 
 import com.google.gson.Gson;
-import data.Product;
-import data.ProductType;
+import entity.Product;
+import entity.ProductType;
 import service.ProductsService;
 
 import javax.servlet.annotation.WebServlet;
@@ -22,12 +22,8 @@ public class ProductsServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("Received get request");
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
-        }
-
-        if (request == null) {
-            throw new IllegalArgumentException("Request must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
 
         Gson gson = new Gson();
@@ -71,8 +67,8 @@ public class ProductsServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         String[] urls = request.getPathInfo().split("/");
         log.info("Received data from the product editor. Adding the product to the database.");

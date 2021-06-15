@@ -27,8 +27,8 @@
     <br>
     <h3 class="text-center">Products View</h3>
     <hr>
-    <button class="btn btn-secondary" id="logout" role="button">Log out</button>
-    <a type="button" class="btn btn-dark float-right"
+    <button class="btn btn-danger" id="logout" role="button">Log out</button>
+    <a type="button" class="btn btn-info float-right"
        href="http://localhost:8080/client/product-cart.jsp">Cart</a>
     <hr>
     <%@ include file="../products/products.html" %>

@@ -1,11 +1,11 @@
 <div class="container align-content-center">
     <br>
-    <h3 class="text-center">Product manager form</h3>
+    <h3 class="text-center">Administrator form</h3>
     <hr>
 
     <div class="card bg-light mx-auto" style="max-width: 600px;">
         <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Product manager</h4>
+            <h4 class="card-title mt-3 text-center">Add new product :)</h4>
             <br>
             <form id="product-addition-form" method="POST" action="http://localhost:8080/servlets/products/add">
                 <div class="form-group">
@@ -41,7 +41,7 @@
 
                 <div class="form-group">
                     <label for="type">
-                        Please select the product type:
+                        Please select the restaurant:
                     </label>
                     <select name="type" id="type" class="form-control w-auto">
                     </select>
@@ -49,7 +49,7 @@
 
                 <div class="form-group">
                     <button type="button" onclick="checkFormInputs().then()" id="product-submit"
-                            class="btn btn-primary col">
+                            class="btn btn-success col">
                         Save
                     </button>
                 </div>

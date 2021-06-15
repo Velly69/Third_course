@@ -22,14 +22,14 @@ const populateTable = async () => {
             let blockButton = document.createElement("button");
             if (!blocked) {
                 blockButton.innerText = "Block"
-                blockButton.className = "badge badge-danger";
+                blockButton.className = "btn btn-danger";
                 blockButton.onclick = async function () {
                     await fetch(`/servlets/users/block?id=${id}`)
                     window.location.reload()
                 }
             } else {
                 blockButton.innerText = "Unblock"
-                blockButton.className = "badge badge-secondary";
+                blockButton.className = "btn btn-success";
                 blockButton.onclick = async function () {
                     await fetch(`/servlets/users/unblock?id=${id}`)
                     window.location.reload()

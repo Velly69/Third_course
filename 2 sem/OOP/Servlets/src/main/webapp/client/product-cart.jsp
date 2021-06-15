@@ -27,7 +27,7 @@
     <h3 class="text-center">Products View</h3>
     <hr>
     <a type="button" class="btn btn-primary" href="http://localhost:8080/client/home.jsp">Home</a>
-    <button class="btn btn-secondary" id="logout" role="button">Log out</button>
+    <button class="btn btn-danger" id="logout" role="button">Log out</button>
     <hr>
     <table id="product-cart" class="table table-striped">
         <thead class="thead-dark">

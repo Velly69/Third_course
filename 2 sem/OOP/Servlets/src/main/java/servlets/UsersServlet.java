@@ -1,7 +1,7 @@
 package servlets;
 
 import com.google.gson.Gson;
-import data.User;
+import entity.User;
 import service.UserService;
 
 import javax.servlet.annotation.WebServlet;
@@ -23,8 +23,8 @@ public class UsersServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("Received get request");
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         Gson gson = new Gson();
 

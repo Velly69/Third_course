@@ -10,8 +10,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.logging.Logger;
 
 
-public class DatabaseConnection {
-    private static DatabaseConnection cp = new DatabaseConnection();
+public class ConnectionPool {
+    private static ConnectionPool cp = new ConnectionPool();
     private static final Logger log = Logger.getLogger(RegistrationServlet.class.getName());
 
     private final String url = "jdbc:postgresql://localhost:5432/internetshop";
@@ -21,13 +21,13 @@ public class DatabaseConnection {
 
     private BlockingQueue<Connection> connections;
 
-    private DatabaseConnection() {
+    private ConnectionPool() {
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
             log.warning("JDBC Driver not found");
         }
-        connections = new LinkedBlockingQueue<Connection>(MAX_CONNECTIONS);
+        connections = new LinkedBlockingQueue<>(MAX_CONNECTIONS);
         try {
             for (int i = 0; i < MAX_CONNECTIONS; ++i) {
                 connections.put(DriverManager.getConnection(url, user, password));
@@ -40,7 +40,7 @@ public class DatabaseConnection {
 
     }
 
-    public static DatabaseConnection getConnectionPool() {
+    public static ConnectionPool getConnectionPool() {
         return cp;
     }
 

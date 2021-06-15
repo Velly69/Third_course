@@ -19,8 +19,8 @@ public class LoginServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         log.info("Received data from logging in.");
-        if (response == null) {
-            throw new IllegalArgumentException("Response must not be null.");
+        if (response == null || request == null) {
+            throw new IllegalArgumentException("Response/request must not be null.");
         }
         Map<String, String[]> parameterMap = request.getParameterMap();
         String name = parameterMap.get("username")[0];

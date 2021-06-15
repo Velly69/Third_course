@@ -1,7 +1,7 @@
 package service;
 
-import data.*;
-import connection.DatabaseConnection;
+import entity.*;
+import connection.ConnectionPool;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,19 +13,19 @@ import java.util.logging.Logger;
 public class ProductsService {
     private static final Logger log = Logger.getLogger(ProductsService.class.getName());
 
-    private static final String editProductQuery =
+    private static final String EDIT_PRODUCT_QUERY =
             "UPDATE product SET name = ?, price = ?, description = ?, product_type_id = ? WHERE id = ?";
-    private static final String addProductQuery =
+    private static final String ADD_PRODUCT_QUERY =
             "INSERT INTO product(name, price, description, product_type_id) VALUES (?, ?, ?, ?)";
-    private static final String removeProductWithIdQuery =
+    private static final String REMOVE_PRODUCT_WITH_ID_QUERY =
             "DELETE FROM product WHERE product.id = ?";
-    private static final String getProductWithIdQuery =
+    private static final String GET_PRODUCT_WITH_ID_QUERY =
             "SELECT product.id, name, price, description, product_type_id FROM product WHERE product.id = ?";
-    private static final String allProductsQuery =
+    private static final String ALL_PRODUCTS_QUERY =
             "SELECT product.id, product.name, product.price, product.description, product_type.id, product_type.name, product_type.description FROM product INNER JOIN product_type ON product.product_type_id = product_type.id";
-    private static final String allProductTypesQuery =
+    private static final String ALL_PRODUCT_TYPES_QUERY =
             "SELECT product_type.id, name, description FROM product_type";
-    private static final String getProductTypeQuery =
+    private static final String GET_PRODUCT_TYPE_QUERY =
             "SELECT product_type.id, name, description FROM product_type WHERE product_type.id = ?";
 
     public static void editProduct(Product product) {
@@ -33,9 +33,9 @@ public class ProductsService {
             log.warning("Cannot add product because it was null.");
             return;
         }
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(editProductQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(EDIT_PRODUCT_QUERY);
             prepareStatement.setString(1, product.getName());
             prepareStatement.setInt(2, product.getPrice());
             prepareStatement.setString(3, product.getDescription());
@@ -52,9 +52,9 @@ public class ProductsService {
 
     public static Product getProductWithId(int id) {
         Product product = null;
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement preparedStatement = connection.prepareStatement(getProductWithIdQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_PRODUCT_WITH_ID_QUERY);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -81,9 +81,9 @@ public class ProductsService {
     }
 
     public static void removeProductWithId(int id) {
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(removeProductWithIdQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(REMOVE_PRODUCT_WITH_ID_QUERY);
             prepareStatement.setInt(1, id);
             if (prepareStatement.executeUpdate() <= 0) {
                 log.warning("Cannot remove product with id " + id);
@@ -99,9 +99,9 @@ public class ProductsService {
             log.warning("Cannot add product because it was null.");
             return;
         }
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(addProductQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(ADD_PRODUCT_QUERY);
             prepareStatement.setString(1, product.getName());
             prepareStatement.setInt(2, product.getPrice());
             prepareStatement.setString(3, product.getDescription());
@@ -118,10 +118,10 @@ public class ProductsService {
     public static ProductType getProductType(int id) {
         log.info("Getting product type from the database.");
         ProductType type = null;
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
             log.info("Connected to the database.");
-            PreparedStatement preparedStatement = connection.prepareStatement(getProductTypeQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(GET_PRODUCT_TYPE_QUERY);
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
@@ -140,10 +140,10 @@ public class ProductsService {
     public static List<ProductType> getProductTypes() {
         log.info("Getting product types from the database.");
         List<ProductType> productTypes = new ArrayList<>();
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
             log.info("Connected to the database.");
-            PreparedStatement preparedStatement = connection.prepareStatement(allProductTypesQuery);
+            PreparedStatement preparedStatement = connection.prepareStatement(ALL_PRODUCT_TYPES_QUERY);
             ResultSet rs = preparedStatement.executeQuery();
             while (rs.next()) {
                 productTypes.add(getProductTypeFromResultSet(rs));
@@ -158,10 +158,10 @@ public class ProductsService {
     public static List<Product> getProducts() {
         log.info("Getting products from the database.");
         List<Product> products = new ArrayList<>();
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
             log.info("Connected to the database.");
-            PreparedStatement ps = connection.prepareStatement(allProductsQuery);
+            PreparedStatement ps = connection.prepareStatement(ALL_PRODUCTS_QUERY);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 int id = rs.getInt(1);

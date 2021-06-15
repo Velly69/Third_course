@@ -1,7 +1,7 @@
 package service;
 
-import data.*;
-import connection.DatabaseConnection;
+import entity.*;
+import connection.ConnectionPool;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,21 +14,21 @@ import java.util.logging.Logger;
 public class UserService {
     private static final Logger log = Logger.getLogger(UserService.class.getName());
 
-    private static final String userByIdQuery =
+    private static final String USER_BY_ID_QUERY =
             "SELECT users.id, name, password, type, blocked FROM users WHERE users.id = ?";
-    private static final String getAllUsersQuery =
+    private static final String GET_ALL_USERS_QUERY =
             "SELECT users.id, name, password, type, blocked FROM users";
-    private static final String checkUserQuery =
+    private static final String CHECK_USER_QUERY =
             "SELECT users.id, users.type, users.blocked FROM users WHERE name = ? AND password = ?";
-    private static final String addUserQuery =
+    private static final String ADD_USER_QUERY =
             "INSERT INTO users(name, password, blocked, type) VALUES (?, ?, ?, ?::user_type)";
-    private static final String changeBlockUserQuery =
+    private static final String CHANGE_BLOCK_USER_QUERY =
             "UPDATE users SET blocked = ? WHERE id = ?";
 
     public static void editBlocked(int id, boolean blocked) {
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(changeBlockUserQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(CHANGE_BLOCK_USER_QUERY);
             prepareStatement.setBoolean(1, blocked);
             prepareStatement.setInt(2, id);
             if (prepareStatement.executeUpdate() <= 0) {
@@ -45,9 +45,9 @@ public class UserService {
             log.warning("Cannot register user because it was null.");
             return;
         }
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(addUserQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(ADD_USER_QUERY);
             prepareStatement.setString(1, user.getName());
             prepareStatement.setString(2, user.getPassword());
             prepareStatement.setBoolean(3, false);
@@ -63,10 +63,10 @@ public class UserService {
 
     public static UserInfo findUser(String name, String password) {
         log.info("Checking username and password");
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
             log.info("Connected to the database.");
-            PreparedStatement ps = connection.prepareStatement(checkUserQuery);
+            PreparedStatement ps = connection.prepareStatement(CHECK_USER_QUERY);
             ps.setString(1, name);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
@@ -88,10 +88,10 @@ public class UserService {
     public static List<User> getClientUsers() {
         log.info("Getting client users from the database.");
         List<User> users = new ArrayList<>();
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
             log.info("Connected to the database.");
-            PreparedStatement ps = connection.prepareStatement(getAllUsersQuery);
+            PreparedStatement ps = connection.prepareStatement(GET_ALL_USERS_QUERY);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 User user = getUserFromResultSet(rs);
@@ -106,9 +106,9 @@ public class UserService {
 
     public static User getUser(int id) {
         User user = null;
-        DatabaseConnection cp = DatabaseConnection.getConnectionPool();
+        ConnectionPool cp = ConnectionPool.getConnectionPool();
         try (Connection connection = cp.getConnection()) {
-            PreparedStatement prepareStatement = connection.prepareStatement(userByIdQuery);
+            PreparedStatement prepareStatement = connection.prepareStatement(USER_BY_ID_QUERY);
             prepareStatement.setInt(1, id);
             ResultSet resultSet = prepareStatement.executeQuery();
             if (resultSet.next()) {
@@ -131,7 +131,7 @@ public class UserService {
         UserType type = UserType.valueOf(rs.getString(4));
         boolean blocked = rs.getBoolean(5);
         if (type == UserType.ADMINISTRATOR) {
-            return new Administrator(id, name, password, blocked);
+            return new Admin(id, name, password, blocked);
         }
         else {
             return new Client(id, name, password, blocked);

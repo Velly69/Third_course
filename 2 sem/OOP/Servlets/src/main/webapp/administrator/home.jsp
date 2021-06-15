@@ -24,11 +24,11 @@
 %>
 <div class="container" id="container">
     <br>
-    <h3 class="text-center">Products View</h3>
+    <h3 class="text-center">Products List</h3>
     <hr>
-    <a type="button" class="btn btn-primary" href="http://localhost:8080/administrator/users-list.jsp">Users</a>
-    <button class="btn btn-secondary" id="logout" role="button">Log out</button>
-    <a type="button" class="btn btn-dark float-right" href="http://localhost:8080/products/product-manager.jsp">Add
+    <a type="button" class="btn btn-info" href="http://localhost:8080/administrator/users-list.jsp">Users</a>
+    <button class="btn btn-danger" id="logout" role="button">Log out</button>
+    <a type="button" class="btn btn-warning float-right" href="http://localhost:8080/products/product-manager.jsp">Add
         product</a>
     <hr>
     <%@ include file="../products/products.html" %>
