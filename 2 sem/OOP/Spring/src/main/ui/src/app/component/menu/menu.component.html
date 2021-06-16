@@ -1,9 +1,8 @@
 <form *ngIf="this.orderForm" [formGroup]="orderForm" (ngSubmit)="onSubmit()">
-  <table class="table table-image">
-    <thead>
+  <table class="table table-dark table-image">
+    <thead class="thead-dark">
       <tr>
         <th scope="col">№</th>
-        <th scope="col">Image</th>
         <th scope="col">Name</th>
         <th scope="col">Price</th>
         <th scope="col">Description</th>
@@ -14,10 +13,6 @@
     <tbody formArrayName="orderDishes">
       <tr *ngFor="let orderDish of orderDishes.controls; let i = index" [formGroupName]="i">
         <td class="index-number">{{i + 1}}</td>
-        <td class="w-25">
-          <img src="../../../assets/{{dishes[i].name.toLowerCase()}}.jpg" class="img-fluid img-thumbnail"
-            alt="{{dishes[i].name}}">
-        </td>
         <td>{{dishes[i].name}}</td>
         <td>{{dishes[i].price}}$</td>
         <td class="commenter">{{dishes[i].description}}<em class="fas fa-angle-down"></em></td>

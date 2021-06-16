@@ -19,6 +19,21 @@ export class OrderComponent implements OnInit {
   errorMessage: string = null;
   successfulMessage: string = null;
 
+  private readonly prices: Record<string, number> = {
+    'Naggets': 8,
+    'Diablo': 30,
+    'Chicken': 10,
+    'Margarita': 15,
+    'Stripces':6,
+    'Neapolitana':25,
+    'Big Tasty':20,
+    'Four cheeses':30,
+    'Milkshake':10,
+    'Chicken roll':20,
+    'Coca-cola':5,
+    'BigMac': 10
+  };
+
   constructor(private readonly formBuilder: FormBuilder, private readonly userService: UserService,
     private readonly orderService: OrderService) { }
 

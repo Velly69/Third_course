@@ -5,7 +5,8 @@
       <div *ngIf="order.dishes.length; else noDishes" class="dishes-list">
         <div class="dish-item" *ngFor="let dish of order.dishes">
           <p><span class="field-name">Dish name: </span> {{dish.dishName}}
-            <span class="field-name"> Quantity: </span> {{dish.quantity}} </p>
+            <span class="field-name"> Quantity: </span> {{dish.quantity}}
+            <span class="field-name"> Price: </span> {{ this.prices[dish.dishName] * dish.quantity}} </p>
         </div>
       </div>
       <ng-template #noDishes>

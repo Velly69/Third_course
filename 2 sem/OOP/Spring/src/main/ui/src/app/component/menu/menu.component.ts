@@ -21,10 +21,18 @@ export class MenuComponent implements OnInit {
   successfullMessage = null;
 
   private readonly prices: Record<string, number> = {
-    'BigMac': 10,
     'Naggets': 8,
     'Diablo': 30,
-    'Chicken': 10
+    'Chicken': 10,
+    'Margarita': 15,
+    'Stripces':6,
+    'Neapolitana':25,
+    'Big Tasty':20,
+    'Four cheeses':30,
+    'Milkshake':10,
+    'Chicken roll':20,
+    'Coca-cola':5,
+    'BigMac': 10
   };
 
   constructor(private readonly formBuilder: FormBuilder, private readonly router: Router,
