@@ -1,7 +1,5 @@
 package connection;
 
-import servlets.RegistrationServlet;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,7 +10,7 @@ import java.util.logging.Logger;
 
 public class ConnectionPool {
     private static ConnectionPool cp = new ConnectionPool();
-    private static final Logger log = Logger.getLogger(RegistrationServlet.class.getName());
+    private static final Logger log = Logger.getLogger(ConnectionPool.class.getName());
 
     private final String url = "jdbc:postgresql://localhost:5432/internetshop";
     private final String user = "postgres";
@@ -37,7 +35,6 @@ public class ConnectionPool {
         } catch (InterruptedException e) {
             log.warning("Connection was interrupted");
         }
-
     }
 
     public static ConnectionPool getConnectionPool() {
