@@ -58,7 +58,7 @@ public class ProductDaoImpl implements ProductDao {
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
     }
 
@@ -88,7 +88,7 @@ public class ProductDaoImpl implements ProductDao {
                 log.info("Couldn't find product with the given id.");
             }
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
         return product;
     }
@@ -104,7 +104,7 @@ public class ProductDaoImpl implements ProductDao {
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
     }
 
@@ -126,7 +126,7 @@ public class ProductDaoImpl implements ProductDao {
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
     }
 
@@ -148,7 +148,7 @@ public class ProductDaoImpl implements ProductDao {
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
         return type;
     }
@@ -167,7 +167,7 @@ public class ProductDaoImpl implements ProductDao {
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
         return productTypes;
     }
@@ -190,17 +190,13 @@ public class ProductDaoImpl implements ProductDao {
                 String productTypeName = rs.getString(6);
                 String productTypeDescription = rs.getString(7);
                 Product product =
-                        new Product(
-                                id,
-                                name,
-                                price,
-                                description,
+                        new Product(id, name, price, description,
                                 new ProductType(productTypeId, productTypeName, productTypeDescription));
                 products.add(product);
             }
             cp.releaseConnection(connection);
         } catch (SQLException | InterruptedException e) {
-            e.printStackTrace();
+            log.warning("Problems with connection");
         }
         return products;
     }
